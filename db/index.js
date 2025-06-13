@@ -5,13 +5,17 @@ class DBconn {
     static async init() {
         try {
             this.pool = new Pool({
-                host: 'localhost',
-                user: 'postgres',
-                password: 'root',
-                max: 20,
-                idleTimeoutMillis: 30000,
-                connectionTimeoutMillis: 2000,
-                database: "maharashtra"
+                host: 'ryes-db.cpc0ic8es0uq.ap-south-1.rds.amazonaws.com',
+                user: 'ryes',
+                password: 'Ryesdb123',
+                // max: 20,
+                // idleTimeoutMillis: 30000,
+                // connectionTimeoutMillis: 2000,
+                database: "maharashtra",
+                port: 5432,
+                ssl: {
+                    rejectUnauthorized: false, // Required for AWS RDS
+                },
             })
             const result = await this.pool.query('SELECT \'brianc\' as name')
             console.log(result != null ? "Database initiated successfully" : "") // brianc
@@ -19,6 +23,18 @@ class DBconn {
             console.log("error", error)
         }
     }
+
+    //             host: 'ryes-db.cpc0ic8es0uq.ap-south-1.rds.amazonaws.com',
+    //             user: 'ryes',
+    //             password: 'Ryesdb123',
+    //             // max: 20,
+    //             // idleTimeoutMillis: 30000,
+    //             // connectionTimeoutMillis: 2000,
+    //             database: "ryes-db",
+    //             port: 5432,
+    //             ssl: {
+    //                 rejectUnauthorized: false, // Required for AWS RDS
+    //             },
 
     static getConnection() {
         if (!this.pool) {
