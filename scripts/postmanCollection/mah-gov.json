@@ -1,0 +1,759 @@
+    {
+	"info": {
+		"_postman_id": "95de869a-92f0-4913-b1e9-c40c5573ed08",
+		"name": "maharshtra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34388516"
+	},
+	"item": [
+    {
+			"name": "roles",
+			"item": [
+				{
+					"name": "Get roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/roles"
+							]
+						},
+						"description": "Get all roles"
+					},
+					"response": []
+				},
+				{
+					"name": "Create roles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tenantName\": \"TenantName\",\n    \"tenantDescription\": \"TenantDescription\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/roles"
+							]
+						},
+						"description": "Create a new roles"
+					},
+					"response": []
+				},
+				{
+					"name": "Update roles",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/roles/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/roles/update",
+								":id"
+							]
+						},
+						"description": "Update an existing roles"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete roles",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/roles/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/roles",
+								":id"
+							]
+						},
+						"description": "Delete a roles"
+					},
+					"response": []
+				},
+                {
+					"name": "Get by id roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/roles/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/roles",
+								":id"
+							]
+						},
+						"description": "Get roles ID"
+					},
+					"response": []
+				}
+			]
+		},
+    {
+			"name": "users",
+			"item": [
+				{
+					"name": "Get users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/users"
+							]
+						},
+						"description": "Get all users"
+					},
+					"response": []
+				},
+				{
+					"name": "Create users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tenantName\": \"TenantName\",\n    \"tenantDescription\": \"TenantDescription\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/users"
+							]
+						},
+						"description": "Create a new users"
+					},
+					"response": []
+				},
+				{
+					"name": "Update users",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/users/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/users/update",
+								":id"
+							]
+						},
+						"description": "Update an existing users"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete users",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/users",
+								":id"
+							]
+						},
+						"description": "Delete a users"
+					},
+					"response": []
+				},
+                {
+					"name": "Get by id users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/users/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/users",
+								":id"
+							]
+						},
+						"description": "Get users ID"
+					},
+					"response": []
+				}
+			]
+		},
+    {
+			"name": "districts",
+			"item": [
+				{
+					"name": "Get districts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/districts",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/districts"
+							]
+						},
+						"description": "Get all districts"
+					},
+					"response": []
+				},
+				{
+					"name": "Create districts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tenantName\": \"TenantName\",\n    \"tenantDescription\": \"TenantDescription\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/districts",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/districts"
+							]
+						},
+						"description": "Create a new districts"
+					},
+					"response": []
+				},
+				{
+					"name": "Update districts",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/districts/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/districts/update",
+								":id"
+							]
+						},
+						"description": "Update an existing districts"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete districts",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/districts/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/districts",
+								":id"
+							]
+						},
+						"description": "Delete a districts"
+					},
+					"response": []
+				},
+                {
+					"name": "Get by id districts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/districts/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/districts",
+								":id"
+							]
+						},
+						"description": "Get districts ID"
+					},
+					"response": []
+				}
+			]
+		},
+    {
+			"name": "talukas",
+			"item": [
+				{
+					"name": "Get talukas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/talukas",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/talukas"
+							]
+						},
+						"description": "Get all talukas"
+					},
+					"response": []
+				},
+				{
+					"name": "Create talukas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tenantName\": \"TenantName\",\n    \"tenantDescription\": \"TenantDescription\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/talukas",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/talukas"
+							]
+						},
+						"description": "Create a new talukas"
+					},
+					"response": []
+				},
+				{
+					"name": "Update talukas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/talukas/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/talukas/update",
+								":id"
+							]
+						},
+						"description": "Update an existing talukas"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete talukas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/talukas/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/talukas",
+								":id"
+							]
+						},
+						"description": "Delete a talukas"
+					},
+					"response": []
+				},
+                {
+					"name": "Get by id talukas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/talukas/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/talukas",
+								":id"
+							]
+						},
+						"description": "Get talukas ID"
+					},
+					"response": []
+				}
+			]
+		},
+    {
+			"name": "villages",
+			"item": [
+				{
+					"name": "Get villages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/villages",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/villages"
+							]
+						},
+						"description": "Get all villages"
+					},
+					"response": []
+				},
+				{
+					"name": "Create villages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tenantName\": \"TenantName\",\n    \"tenantDescription\": \"TenantDescription\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/villages",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/villages"
+							]
+						},
+						"description": "Create a new villages"
+					},
+					"response": []
+				},
+				{
+					"name": "Update villages",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/villages/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/villages/update",
+								":id"
+							]
+						},
+						"description": "Update an existing villages"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete villages",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/villages/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/villages",
+								":id"
+							]
+						},
+						"description": "Delete a villages"
+					},
+					"response": []
+				},
+                {
+					"name": "Get by id villages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/villages/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/villages",
+								":id"
+							]
+						},
+						"description": "Get villages ID"
+					},
+					"response": []
+				}
+			]
+		},
+    {
+			"name": "visits",
+			"item": [
+				{
+					"name": "Get visits",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/visits",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visits"
+							]
+						},
+						"description": "Get all visits"
+					},
+					"response": []
+				},
+				{
+					"name": "Create visits",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tenantName\": \"TenantName\",\n    \"tenantDescription\": \"TenantDescription\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/visits",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visits"
+							]
+						},
+						"description": "Create a new visits"
+					},
+					"response": []
+				},
+				{
+					"name": "Update visits",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/visits/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visits/update",
+								":id"
+							]
+						},
+						"description": "Update an existing visits"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete visits",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/visits/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visits",
+								":id"
+							]
+						},
+						"description": "Delete a visits"
+					},
+					"response": []
+				},
+                {
+					"name": "Get by id visits",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/visits/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visits",
+								":id"
+							]
+						},
+						"description": "Get visits ID"
+					},
+					"response": []
+				}
+			]
+		},
+    {
+			"name": "visitimages",
+			"item": [
+				{
+					"name": "Get visitimages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/visitimages",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visitimages"
+							]
+						},
+						"description": "Get all visitimages"
+					},
+					"response": []
+				},
+				{
+					"name": "Create visitimages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tenantName\": \"TenantName\",\n    \"tenantDescription\": \"TenantDescription\"\n}"
+						},
+						"url": {
+							"raw": "localhost:4000/api/visitimages",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visitimages"
+							]
+						},
+						"description": "Create a new visitimages"
+					},
+					"response": []
+				},
+				{
+					"name": "Update visitimages",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/visitimages/update/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visitimages/update",
+								":id"
+							]
+						},
+						"description": "Update an existing visitimages"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete visitimages",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/api/visitimages/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visitimages",
+								":id"
+							]
+						},
+						"description": "Delete a visitimages"
+					},
+					"response": []
+				},
+                {
+					"name": "Get by id visitimages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:4000/visitimages/:id",
+							"protocol": "http",
+							"host": [
+								"localhost:4000"
+							],
+							"path": [
+								"/api/visitimages",
+								":id"
+							]
+						},
+						"description": "Get visitimages ID"
+					},
+					"response": []
+				}
+			]
+		}
+    ]
+}
